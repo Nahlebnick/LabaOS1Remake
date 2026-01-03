@@ -48,9 +48,9 @@ struct employee
 ```text
 Project Root
 ├── apps/
-│   ├── main/       # 🧠 Main: Основной управляющий процесс (оркестратор)
-│   ├── creator/    # ✍️ Creator: Утилита для создания бинарных файлов данных
-│   └── reporter/   # 📄 Reporter: Утилита для чтения данных и генерации отчетов
+│   ├── main/       # Main: Основной управляющий процесс
+│   ├── creator/    # Creator: Утилита для создания бинарных файлов данных
+│   └── reporter/   # Reporter: Утилита для чтения данных и генерации отчетов
 └── libs/
     ├── employee.h  # Структура описания сотрудника
     ├── fileUtils.h # Функции для работы с файлами
@@ -67,3 +67,4 @@ Project Root
 mkdir build
 cmake -B build
 cmake --build build
+
