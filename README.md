@@ -52,10 +52,15 @@ Project Root
 │   ├── main/       # Main: Основной управляющий процесс
 │   ├── creator/    # Creator: Утилита для создания бинарных файлов данных
 │   └── reporter/   # Reporter: Утилита для чтения данных и генерации отчетов
-└── libs/
-    ├── employee.h  # Структура описания сотрудника
-    ├── fileUtils.h # Функции для работы с файлами
-    └── process.h   # Класс-обертка для управления процессами
+├── libs/
+│   ├── employee.h  # Структура описания сотрудника
+│   ├── fileUtils.h # Функции для работы с файлами
+│   └── process.h   # Класс для управления процессами
+└── tests/
+    ├── test_employee.cpp       # Unit-тесты для employee
+    ├── test_fileutils.cpp      # Unit-тесты для файловых утилит 
+    └── test_process.cpp        # Unit-тесты для класса Process
+
 ```
 
 ## Сборка и запуск
@@ -69,5 +74,12 @@ mkdir build
 cmake -B build
 cmake --build build
 ```
+Вы можете запустить тесты через терминал.
+```bash
+ctest --test-dir build/tests -V
+```
+
+
+
 
 
