@@ -45,7 +45,6 @@ struct employee
 
 ## Структура проекта
 
-Решение состоит из трех проектов:
 ```text
 Project Root
 ├── apps/
@@ -78,6 +77,7 @@ cmake --build build
 ```bash
 ctest --test-dir build/tests -V
 ```
+
 
 
 
