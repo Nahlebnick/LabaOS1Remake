@@ -12,11 +12,10 @@ std::istream& operator>>(std::istream& in, employee& emp)
 
     in.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
     std::cout << "Name: ";
-    in.get(emp.name, 80); 
+    in.get(emp.name, 10); 
     if (in.fail() && !in.eof()) in.clear(); 
     in.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
 
-    in.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
     std::cout << "Hours: ";
     while (!(in >> emp.hours) || emp.hours < 0) {
         std::cout << "Invalid hours. Enter a positive number: ";

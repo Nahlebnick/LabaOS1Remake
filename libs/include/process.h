@@ -20,7 +20,7 @@ public:
 
 	Process(Process&& other) noexcept;
 	Process& operator=(Process&& other) noexcept;
-	~Process() noexcept { close(); }
+	~Process() noexcept { terminate(); close();}
 	
 	void wait(DWORD timeout=INFINITE);
 
